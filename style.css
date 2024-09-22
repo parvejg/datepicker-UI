@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.datepicker-wrapper {
+  width: 300px;
+  background-color: gray;
+  margin: 1rem 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-and-btn-wrapper {
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+  justify-content: space-between;
+}
+.input-and-btn-wrapper > button {
+  min-height: 100%;
+  min-width: 17%;
+  font-size: large;
+  border: 1px solid black;
+  cursor: pointer;
+}
+li,
+span {
+  cursor: pointer;
+}
+.input-and-btn-wrapper > input {
+  margin: 0;
+  padding: 0;
+  height: 95%;
+  width: 83%;
+  font-size: large;
+  padding-left: 5px;
+}
+.btn-and-year-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+.year-and-days-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  background-color: gainsboro;
+  width: 100%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.btn-and-year-wrapper > span > i {
+  font-size: 1.8rem;
+}
+.btn-and-year-wrapper > p {
+  font-size: large;
+}
+.daysName-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.daysName-wrapper > span {
+  width: 40px;
+  font-size: large;
+  text-align: center;
+}
+.date-wrapper {
+  max-width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-rows: 40px 40px 40px 40px 40px;
+  grid-template-columns: 40px 40px 40px 40px 40px 40px 40px;
+  row-gap: 5px;
+  column-gap: 2.5px;
+  place-self: center;
+}
+.date {
+  width: 45px;
+  height: 45px;
+  background-color: lightgray;
+  text-align: center;
+  border: 1px solid black;
+}
